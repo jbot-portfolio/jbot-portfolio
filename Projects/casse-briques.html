@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Casse-Briques - Portfolio Bot Joseph</title>
+        <link rel="icon" href="../Design/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap">
+        <link rel="stylesheet" href="casse-briques.css">
+    </head>
+    
+    <header style="overflow: hidden">
+        <div id="navBar">
+            <img src="../Design/logoPortfolio.png" id="logoPortfolio">
+            <nav id="nav">
+                <ul>
+                    <li><a href="..\index.html">Home</a></li>
+                    <li><a href="..\projects.html">Projects</a></li>
+                    <li><a href="..\about.html">About</a></li>
+                    <li><a href="..\contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <div id="wrap">
+            <div id="container">
+                <h1>CASSE-BRIQUES</h1>
+                <div id="img"></div>
+                <h2>Description</h2>
+                <label id="soulignage"></label>
+                <p>Ce projet était initialement un pong en programmation orientée objet, programmé en cours de NSI avec la librairie Tkinter en Python.<br>
+                    Une fois le pong fini, j'y ai ajouté un peu d'aléatoire, que ça soit au niveau des tailles de balles ou de la raquette, 
+                    puis je l'ai transformé en Casse-Briques en ajoutant une classe "Brique" permettant ainsi de générer des briques.<br>
+                    Ce projet m'a appris à utiliser tkinter, générer des formes ainsi que la gestion des collisions et celà à été également mon premier projet en programmation orientée objet.<br>
+                    Globalement, ce fut une expérience enrichissante en terme de programmation, j'ai pu m'exercer à la POO et approfondir tkinter.
+                </p>
+                <h3>Demo</h3>
+                <iframe width="100%" height="50%" src="https://www.youtube.com/embed/sBcYK6uIK_s" title="Portfolio Joseph Bot - Démo Casse-Briques" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <h4>Download from the repository</h4>
+                <a id="GitHubButton" href="https://github.com/jbot-portfolio/Joseph-Bot-Projets/tree/main/Casse-Briques" target="_blank" onmouseover="Hover()" onmouseout="unHover()">
+                    <img id="imgGit" src="LogoGitHub.png">
+                    <img id="imgGitHover" src="LogoGitHubHover.png">
+                </a>
+            </div>
+
+            <div id="footer">
+                <div id="margin"></div>
+                <a id="git" href="https://github.com/jbot-portfolio/Joseph-Bot-Projets" target="_blank" onmouseover="HoverIcon('iconGit', 'iconGitHover')" onmouseout="unHoverIcon('iconGit', 'iconGitHover')">
+                    <img id="iconGit" src="../Design/IconGitHub.png">
+                    <img id="iconGitHover" src="../Design/IconGitHubHover.png">
+                </a>
+                <a id="linkedin" href="https://www.linkedin.com/in/joseph-bot-271755213/" target="_blank" onmouseover="HoverIcon('iconLinkedin', 'iconLinkedinHover')" onmouseout="unHoverIcon('iconLinkedin', 'iconLinkedinHover')">
+                    <img id="iconLinkedin" src="../Design\IconLinkedin.png">
+                    <img id="iconLinkedinHover" src="../Design\IconLinkedinHover.png">
+                </a>
+                <a  id="mail" href="mailto:joseph.bot@outlook.fr" onmouseover="HoverIcon('iconMail', 'iconMailHover')" onmouseout="unHoverIcon('iconMail', 'iconMailHover')">
+                    <img id="iconMail" src="../Design/IconMail.png">
+                    <img id="iconMailHover" src="../Design/IconMailHover.png">
+                </a>
+                <nav id="navFooter">
+                    <ul>
+                        <li><a href="..\index.html">Home</a></li>
+                        <li><a href="..\projects.html">My Projects</a></li>
+                        <li><a href="..\about.html">About Me</a></li>
+                        <li><a href="..\contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h5>Thanks to <a id="credit" href="https://www.freepik.com/vectors/background" target="_blank">Freepik</a> for background vectors.</h5>
+                <h6>Copyright &copy; 2021 Joseph Bot. All rights reserved. </h6>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function Hover() {
+            document.getElementById('imgGit').style.opacity = 0;
+            document.getElementById('imgGitHover').style.opacity = 1; }
+        function unHover() {
+            document.getElementById('imgGit').style.opacity = 1;
+            document.getElementById('imgGitHover').style.opacity = 0; }
+
+        function HoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 0;
+            document.getElementById(iconHover).style.opacity = 1; }
+        function unHoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 1;
+            document.getElementById(iconHover).style.opacity = 0; }
+    </script>
+

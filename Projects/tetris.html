@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tetris - Portfolio Bot Joseph</title>
+        <link rel="icon" href="../Design/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap">
+        <link rel="stylesheet" href="tetris.css">
+    </head>
+    
+    <header style="overflow: hidden">
+        <div id="navBar">
+            <img src="../Design/logoPortfolio.png" id="logoPortfolio">
+            <nav id="nav">
+                <ul>
+                    <li><a href="..\index.html">Home</a></li>
+                    <li><a href="..\projects.html">Projects</a></li>
+                    <li><a href="..\about.html">About</a></li>
+                    <li><a href="..\contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <div id="wrap">
+            <div id="container">
+                <h1>TETRIS</h1>
+                <div id="img"></div>
+                <h2>Description</h2>
+                <label id="soulignage"></label>
+                <p>Le puzzle game mythique des années 80 programmé en C# avec Unity.<br>
+                    Ce projet fut très utile car il m'a permis de m'exercer en C# pour la Train Jam et m'a aidé à
+                    programmer plus proprement, notamment en utilisant de nombreuses méthodes.<br>
+                    Ce fut également une bonne occasion de m'entrainer avec les sprites en 2D et notamment les instances en C#.
+                </p>
+                <h3>Demo</h3>
+                <iframe width="100%" height="50%" src="https://www.youtube.com/embed/8UtD6WxKFNI" title="Portfolio Joseph Bot - Démo Tetris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>Download from the repository</h4>
+                <a id="GitHubButton" href="https://github.com/jbot-portfolio/Joseph-Bot-Projets/blob/main/Tetris.zip" target="_blank" onmouseover="Hover()" onmouseout="unHover()">
+                    <img id="imgGit" src="LogoGitHub.png">
+                    <img id="imgGitHover" src="LogoGitHubHover.png">
+                </a>
+            </div>
+
+            <div id="footer">
+                <div id="margin"></div>
+                <a id="git" href="https://github.com/jbot-portfolio/Joseph-Bot-Projets" target="_blank" onmouseover="HoverIcon('iconGit', 'iconGitHover')" onmouseout="unHoverIcon('iconGit', 'iconGitHover')">
+                    <img id="iconGit" src="../Design/IconGitHub.png">
+                    <img id="iconGitHover" src="../Design/IconGitHubHover.png">
+                </a>
+                <a id="linkedin" href="https://www.linkedin.com/in/joseph-bot-271755213/" target="_blank" onmouseover="HoverIcon('iconLinkedin', 'iconLinkedinHover')" onmouseout="unHoverIcon('iconLinkedin', 'iconLinkedinHover')">
+                    <img id="iconLinkedin" src="../Design\IconLinkedin.png">
+                    <img id="iconLinkedinHover" src="../Design\IconLinkedinHover.png">
+                </a>
+                <a  id="mail" href="mailto:joseph.bot@outlook.fr" onmouseover="HoverIcon('iconMail', 'iconMailHover')" onmouseout="unHoverIcon('iconMail', 'iconMailHover')">
+                    <img id="iconMail" src="../Design/IconMail.png">
+                    <img id="iconMailHover" src="../Design/IconMailHover.png">
+                </a>
+                <nav id="navFooter">
+                    <ul>
+                        <li><a href="..\index.html">Home</a></li>
+                        <li><a href="..\projects.html">My Projects</a></li>
+                        <li><a href="..\about.html">About Me</a></li>
+                        <li><a href="..\contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h5>Thanks to <a id="credit" href="https://www.freepik.com/vectors/background" target="_blank">Freepik</a> for background vectors.</h5>
+                <h6>Copyright &copy; 2021 Joseph Bot. All rights reserved. </h6>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function Hover() {
+            document.getElementById('imgGit').style.opacity = 0;
+            document.getElementById('imgGitHover').style.opacity = 1; }
+        function unHover() {
+            document.getElementById('imgGit').style.opacity = 1;
+            document.getElementById('imgGitHover').style.opacity = 0; }
+
+        function HoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 0;
+            document.getElementById(iconHover).style.opacity = 1; }
+        function unHoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 1;
+            document.getElementById(iconHover).style.opacity = 0; }
+    </script>

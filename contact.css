@@ -1,0 +1,798 @@
+@import Url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+
+/* Cacher les scrollbars */
+body::-webkit-scrollbar {display: none;} 
+body {overflow-x: hidden;}
+
+
+html, body { 
+    width: 100.2%; 
+    height: 100%;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 45px;
+    background-color: #ffffff;
+}
+
+header {
+    width: 102%;
+    height: 7.5%;
+    margin-top: -9px;
+    margin-left: -9px;
+    background-color: #292929;
+}
+
+#logoPortfolio {
+    float: left;
+    margin: 0.20% 0 0 0;
+    max-width: 30vh;
+    height: auto;
+}
+
+#nav {
+    float: right;
+    margin-right: 4%;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li {
+    display: inline-block;
+    margin-left: 1.65vw;
+    padding-top: 1.5vh;
+    font-size: 3.5vh;
+    position: relative;
+}
+
+/* Adaptation de la navBar en fonction de la taille verticale de la fenêtre */
+@media (max-height: 1300px) { 
+    #nav li {
+        padding-top: 19px;
+    }
+}
+
+@media (max-height: 1150px) { 
+    #nav li {
+        padding-top: 16px;
+    }
+}
+
+@media (max-height: 1090px) { 
+    #nav li {
+        padding-top: 15px;  
+    }
+}
+
+#nav a {
+    color: #e3e3e3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav a:hover {
+    color: #ffffff;
+}
+
+#nav a::before {
+    content: '';
+    display: block;
+    height: 0.6vh;
+    width: 0%;
+    top: 0;
+    background-color: #f56529;
+    position: absolute;
+    transition: all ease-in-out 200ms;
+}
+
+#nav a:hover::before {
+    width: 101%;
+}
+
+
+#wrap {
+    width: 100.2%;
+    height: 100.4%;
+    margin-top: -9px;
+    margin-left: -9px;
+    background-size: 110%;
+    background-image: url(Design/Wallpapers/backgroundContact.jpg);
+    background-color: #272727;
+}
+
+
+#contactMeTitle {
+    position: relative;
+    left: 13%;
+    top: 22%;
+    max-width: 32%;
+}
+
+@media (max-height: 1090px) {
+    #contactMeTitle {
+        top: 20%;
+    }
+}
+
+/* Input du nom */
+#form {
+    width: 15%;
+    height: 6%;
+    position: relative;
+    left: 13%;
+    top: 27%;
+    overflow: hidden;
+}
+
+#form input {
+    width: 100%;
+    height: 60%;
+    padding-top: 8.5%;
+    color: #000000;
+    font-weight: 550;
+    font-size: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+@media (max-height: 1090px) {
+    #form {
+        width: 14%;
+        height: 8%;
+        top: 22%;
+    }
+    #form input {
+        height: 100%;
+        padding-top: 7%;
+        font-weight: 400;
+        font-size: 45%;
+    }
+}
+
+#form label {
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    width: 100%;        
+    height: 100%;
+    font-size: 90%;
+    pointer-events: none;
+    color: #012032;
+    border-bottom: 3px solid #012032;
+}
+
+#form label::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: -2px;
+    border-bottom: 3px solid #ff6e30;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+}
+
+#inputName {
+    position: absolute;
+    bottom: 5%;
+    transition: all 300ms ease;
+}
+
+#form input:focus + #labelName #inputName, 
+#form input:valid + #labelName #inputName {
+    transform: translateY(-100%);
+    font-size: 80%;
+    color: #ff6e30;
+}
+
+@media (max-height: 1090px){
+    #inputName {
+        font-size: 85%;
+    }
+    #form input:focus + #labelName #inputName, 
+    #form input:valid + #labelName #inputName {
+        transform: translateY(-80%);
+        font-size: 70%;
+    }
+}
+
+#form input:focus + #labelName::after, #form input:valid + #labelName::after {
+    transform: translateX(0%);
+}
+
+
+/* Input Email */
+#formMail {
+    width: 22%;
+    height: 6%;
+    position: relative;
+    left: 31%;
+    top: 21%;
+    overflow: hidden;
+}
+
+#formMail input {
+    width: 100%;
+    height: 60%;
+    padding-top: 5.5%;
+    color: #000000;
+    font-weight: 550;
+    font-size: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+@media (max-height: 1090px) {
+    #formMail {
+        width: 24%;
+        height: 8%;
+        left: 29%;
+        top: 14%;
+    }
+    #formMail input {
+        height: 100%;
+        padding-top: 4.5%;
+        font-weight: 400;
+        font-size: 45%;
+    }    
+}
+
+#formMail label {
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    width: 100%;        
+    height: 100%;
+    font-size: 90%;
+    pointer-events: none;
+    color: #012032;
+    border-bottom: 3px solid #012032;
+}
+
+#formMail label::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: -2px;
+    border-bottom: 3px solid #ff6e30;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+}
+
+#inputMail {
+    position: absolute;
+    bottom: 5%;
+    transition: all 300ms ease;
+}
+
+#formMail input:focus + #labelMail #inputMail, 
+#formMail input:valid + #labelMail #inputMail {
+    transform: translateY(-100%);
+    font-size: 80%;
+    color: #ff6e30;
+}
+
+@media (max-height: 1090px) {
+    #inputMail {
+        font-size: 80%;
+    }
+    #formMail input:focus + #labelMail #inputMail, 
+    #formMail input:valid + #labelMail #inputMail {
+        transform: translateY(-70%);
+        font-size: 75%;
+    }
+}
+
+#formMail input:focus + #labelMail::after, #formMail input:valid + #labelMail::after {
+    transform: translateX(0%);
+}
+
+
+
+/* Input Objet */
+#formObjet {
+    width: 27%;
+    height: 6%;
+    position: relative;
+    left: 13%;
+    top: 23%;
+    overflow: hidden;
+}
+
+#formObjet input {
+    width: 100%;
+    height: 80%;
+    padding-top: 3.25%;
+    color: #000000;
+    font-weight: 550;
+    font-size: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+@media (max-height: 1090px) {
+    #formObjet {
+        width: 27%;
+        height: 8.5%;
+        top: 15%;
+    }
+    #formObjet input {
+        height: 100%;
+        padding-top: 4.25%;
+        font-weight: 40;
+        font-size: 45%;
+    }    
+}
+
+#formObjet label {
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    width: 100%;        
+    height: 100%;
+    font-size: 90%;
+    pointer-events: none;
+    color: #012032;
+    border-bottom: 3px solid #012032;   
+}
+
+#formObjet label::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: -2px;
+    border-bottom: 3px solid #ff6e30;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+}
+
+#inputObjet {
+    position: absolute;
+    bottom: 5%;
+    transition: all 300ms ease;
+}
+
+#formObjet input:focus + #labelObjet #inputObjet, 
+#formObjet input:valid + #labelObjet #inputObjet {
+    transform: translateY(-100%);
+    font-size: 80%;
+    color: #ff6e30;
+}
+
+@media (max-height: 1090px) {
+    #inputObjet {
+        font-size: 80%;
+    }
+    #formObjet input:focus + #labelObjet #inputObjet, 
+    #formObjet input:valid + #labelObjet #inputObjet {
+        transform: translateY(-70%);
+        font-size: 75%;
+    }
+}
+
+#formObjet input:focus + #labelObjet::after, #formObjet input:valid + #labelObjet::after {
+    transform: translateX(0%);
+}
+
+
+
+/* Text Area Description */
+#formDescription {
+    width: 40%;
+    height: 28.25%;
+    position: relative;
+    left: 13%;
+    top: 24%;
+    overflow: hidden;
+}
+
+#formDescription textarea {
+    width: 99.6%;
+    height: 77%;
+    margin-top: 4.5%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    max-height: 80%;
+    position: relative;
+    color: #001522;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    font-family: "Roboto";
+    font-weight: 550;
+    font-size: 50%;
+    background: transparent;
+}
+
+@media (max-height: 1090px) {
+    #formDescription {
+        width: 40%;
+        height: 28%;
+        top: 17%;
+    }
+    #formDescription textarea {
+        height: 78%;
+        margin-top: 4%;
+        font-weight: 1;
+        font-size: 40%;
+    }
+}
+
+/* Border Animation */
+#labelDescription {
+    position: absolute;
+    top: -70%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    color: #012032;
+    transform: translateY(0%);
+    border-bottom: 2px solid #012032;
+    transition: transform 300ms ease;
+}
+
+#labelDescription::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    border-bottom: 4px solid #ff6e30;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+}
+
+#nameDescription {
+    position: absolute;
+    font-size: 90%;
+    bottom: 1%;
+    transition: all 300ms ease;
+    overflow: visible;
+}
+
+#textArea:focus + #labelDescription::after,
+#textArea:valid + #labelDescription::after  {
+    transform: translateX(0%);
+}
+
+#textArea:focus + #labelDescription, 
+#textArea:valid + #labelDescription {
+    transform: translateY(65%);
+}
+
+#textArea:focus + #labelDescription #nameDescription, 
+#textArea:valid + #labelDescription #nameDescription {
+    transform: translateY(-100%);
+    font-size: 80%;
+    bottom: 5%;
+    padding-top: 23.5%;
+    color: #ff6e30;
+}
+
+@media (max-height: 1090px) {
+    #nameDescription {
+        font-size: 70%;
+    }   
+    #textArea:focus + #labelDescription #nameDescription, 
+    #textArea:valid + #labelDescription #nameDescription {
+        font-size: 65%;
+        padding-top: 22.75%;
+    }
+}
+
+
+/* Bouton Valider */
+
+#button {
+    position: relative;
+    display: inline-block;
+    left: 25%;
+    top: 25%;
+    padding: 0.6% 4.75%;
+    font-size: 80%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fbfcfe;
+    background: rgb(236,92,40);
+    background: linear-gradient(13deg, rgba(236,92,40,1) 0%, rgb(236, 133, 15) 100%);
+    letter-spacing: 2px;
+    transition: 500ms;
+}
+
+#button:hover {
+    color: rgb(236,92,40);
+    color: linear-gradient(13deg, rgb(238, 143, 40) 0%, rgba(238,143,35,1) 100%);
+    background: transparent;
+    font-size: 85%;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+#button span {
+    display: block;
+    position: absolute;
+    background: rgb(236,92,40);
+    background: linear-gradient(13deg, rgba(236,92,40,1) 0%, rgba(238,143,35,1) 100%);
+}
+
+@media (max-height: 1090px) { 
+    #button {
+        top: 17%;
+        padding: 0.5% 4.5%;
+        font-size: 60%;
+    }
+    #button:hover {
+        font-size: 62%;
+        letter-spacing: 3px;
+    }
+}
+
+/* Hover gauche */
+#button span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 1.25%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms;
+}
+
+#button:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 200ms;
+}
+
+/* Hover bas */
+#button span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6.5%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms;
+}
+
+#button:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 200ms;
+}
+
+/* Hover droite */
+#button span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 1.2%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms;
+    transition-delay: 150ms;
+}
+
+#button:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 200ms;
+    transition-delay: 150ms;
+}
+
+/* Hover haut */
+#button span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 6%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms;
+    transition-delay: 150ms;
+}
+
+#button:hover span:nth-child(4) {   
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 200ms;
+    transition-delay: 150ms;
+}
+
+
+/* Message de confirmation de l'envoi */
+#textConfirmation {
+    position: absolute;
+    left: 28%;
+    top: 94%;
+    font-size: 55%;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #012032;
+    display: none;
+}
+
+@media (max-height: 1090px) {
+    #textConfirmation {
+        left: 27.7%;
+        font-size: 40%;
+    }
+}
+
+
+/* Footer */
+#footer {
+    position: relative;
+    width: 100%;
+    height: 7.5vw;
+    margin-top: 19vw;
+    background-color: #272727;
+}
+
+#margin {
+    height: 0.5vw;
+}
+
+/* Icon GitHub */
+#git {
+    position: relative;
+    margin-left: 47.35vw; 
+    margin-top: 5vw;
+    text-decoration: none;
+}
+#iconGit {
+    position: absolute;
+    width: 1.6vw; 
+    height: 1.6vw; 
+    transition: opacity 400ms;
+}
+#iconGitHover {
+    position: absolute;
+    width: 1.6vw; 
+    height: 1.6vw; 
+    pointer-events: none; 
+    opacity: 0; 
+    transition: opacity 400ms;
+}
+
+/* Icon LinkedIn */
+#linkedin {
+    position: relative;
+    margin-left: 1.85vw; 
+    text-decoration: none;
+}
+#iconLinkedin {
+    position: absolute;
+    width: 1.6vw; 
+    height: 1.6vw; 
+    transition: opacity 400ms;
+}
+#iconLinkedinHover {
+    position: absolute;
+    width: 1.6vw; 
+    height: 1.6vw; 
+    pointer-events: none; 
+    opacity: 0; 
+    transition: opacity 400ms;
+}
+
+/* Icon Mail */
+#mail {
+    position: relative;
+    margin-left: 1.85vw;
+    text-decoration: none;
+}
+#iconMail {
+    position: absolute;
+    width: 1.6vw;  
+    height: 1.6vw; 
+    transition: opacity 400ms;
+}
+#iconMailHover {
+    position: absolute;
+    width: 1.6vw; 
+    height: 1.6vw; 
+    pointer-events: none; 
+    opacity: 0; 
+    transition: opacity 400ms;
+}
+
+
+/* Nav Text */
+
+#navFooter {
+    margin-top: -0.6vw;
+    margin-left: 41.3vw;
+}
+
+#navFooter ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navFooter li {
+    display: inline-block;
+    margin-left: 0.5vw;
+    font-size: 0.85vw;
+    font-weight: 400;
+    position: relative;
+}
+
+#navFooter a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 400ms;
+}
+
+#navFooter a:hover {
+    color: rgb(245, 123, 41);
+    transition: color 400ms;
+}
+
+h5 {
+    font-family: Roboto Regular;
+    font-size: 0.7vw;
+    font-weight: 1;
+    text-align: center;
+    margin-top: 1.1vw;
+    color: #ffffff;
+}
+
+h6 {
+    font-family: Roboto Regular;
+    font-size: 0.75vw;
+    font-weight: 1;
+    text-align: center;
+    margin-top: -1vw;
+    color: #ffffff; 
+}
+
+#credit {
+    font-weight: 600;
+    color: #ffffff; 
+    transition: all 400ms;
+}
+
+#credit:hover {
+    text-decoration: none;
+    color: rgb(245, 123, 41);
+    transition: all 400ms;
+}
+
+@media (max-height: 1100px) { 
+    #margin {
+        height: 0.8vw;
+    }
+    #footer {
+        margin-top: 14vw;
+    }
+    #navFooter {
+        margin-top: -2vw;
+        margin-left: 41.3vw;
+    }
+    #navFooter li {
+        margin-left: 0.415vw;
+    }
+    h5 {
+        font-size: 0.75vw;
+        margin-top: 1vw;
+    }
+    h6 {
+        margin-top: -1.1vw;
+    }
+}
