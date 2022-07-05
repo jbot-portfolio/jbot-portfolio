@@ -25,6 +25,10 @@
 
     <body>
         <div id="wrap">
+            <div id="filterSurvival3D" onclick="unShowDemo('filterSurvival3D', 'demoSurvival3D')">
+                <iframe id="demoSurvival3D" src="https://www.youtube.com/embed/UEXnzsf8fVM" title="Portfolio Joseph Bot - Démo Zombies Survivor 3D"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
             <div id="filter" onclick="unShowDemo('filter', 'demoPlatformer2D')">
                 <iframe id="demoPlatformer2D" src="https://www.youtube.com/embed/MSj6rhcfZ1A" title="Portfolio Joseph Bot - Démo Platformer 2D" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -37,19 +41,59 @@
                 <iframe id="demoInfiltrationGame" src="https://www.youtube.com/embed/gLXf9l190Dc" title="Portfolio Joseph Bot - Démo Infiltration Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
-            <div id="platformer-container">
-                
+            <div id="survival3D-container">
                 <h1 id="titleMyProjects">MY PROJECTS</h1>
                 <div id="barreProjects"></div>
 
+                <h1>ZOMBIES SURVIVORS 3D</h1>
+            
+                <div id="imgSurvival3D">
+                    <a id="titlePlatformer"><b>DESCRIPTION</b><a>
+                    <div id="textJustify">
+                        <p>A 3D top down zombies beat'em all shooter game in voxel. I wanted to improve my unity and C# skills and discover new aspects as the shaders in 3D and 3rd person animations. </p>
+                    </div>
+                    <a id="moreInfo">More Information</a>
+                    <div id=soulignageMoreInfo></div>
+                    <div id="infos">
+                        <div id="clock"></div>
+                        <a id="textClock">~50-100 hours of work</a>
+
+                        <div id="setting"></div>
+                        <a id="textSetting">From Scratch</a>
+
+                        <div id="animation"></div>
+                        <a id="textAnimation">3D Animations</a>
+
+                        <div id="shaders"></div>
+                        <a id="textShaders">VFX & Shader Graphs</a>
+
+                        <div id="IA"></div>
+                        <a id="textIA">Basic State Machine</a>
+
+                        <div id="assets"></div>
+                        <a id="textAssets">4 Assets used</a>
+                    </div>
+
+                    <a id="buttonDemo" href="javascript:showDemo('filterSurvival3D','demoSurvival3D');" style="margin-top: 40;" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        DEMO
+                    </a>
+                    <p id="downloadTxt"><i>or <a id="downloadHyperTxt" href="https://drive.google.com/file/d/1vHLfoCAMaFhsle-h37RC7FDFeQqUHLDk/view" target="_blank">download</a></i></p>
+                </div>
+            </div>
+            
+
+            <div id="platformer-container">
+            
                 <h1>PLATFORMER 2D</h1>
-                <!--<a id="moreProjectsText"><i>Étant à fond dans l'apprentissage de Unity et du C# en ce moment, je travaille 
-                    également sur d'autres petits projets, comme notamment un beat'em all en vue top down, ou encore un petit platformer 3D orienté sur le speedrun.</i></a>-->
                 
                 <div id="imgPlatformer">
                     <a id="titlePlatformer"><b>DESCRIPTION</b><a>
                     <div id="textJustify">
-                        <p>Je voulais m'essayer aux shaders ainsi que le level design avec les Tilemaps dans Unity, tout en développant un petit platformer avec un système de combat et des IA basiques.</p>
+                        <p>I wanted to try and learn shaders and lights in 2D with Unity, as well as level design using the tilemap, while developing a little platformer with basic fighting and AI.</p>
                     </div>
                     <a id="moreInfo">More Information</a>
                     <div id=soulignageMoreInfo></div>
@@ -78,7 +122,7 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                        SEE DEMO
+                        DEMO
                     </a>
                     <p id="downloadTxt"><i>or <a id="downloadHyperTxt" href="https://github.com/jbot-portfolio/Joseph-Bot-Projets/blob/main/Platformer%202D.rar" target="_blank">download</a></i></p>
                 </div>
@@ -90,7 +134,8 @@
                 <div id="imgMinivilles">
                     <a id="titlePlatformer"><b>DESCRIPTION</b><a>
                     <div id="textJustify" style="margin-top: 8.75%;">
-                        <p>Projet de fin de séquence sur la POO en C#, réalisé en groupe de 4 en cours a l'ENJMIN. Il s'agit du jeu minivilles programmé en C# dont j'ai entièrement conçu l'interface graphique en XAML avec WPF sur Visual Studio. Ce projet a servi d'initiation à Git en utilisant GitHub Desktop.</p>
+                        <p>A simple project to conclude our C# OOP course during the 3-month training at the CNAM-ENJMIN, developed in a team of 4 students.
+                            It's the adaptation of the board game Minivilles, for which I entirely designed and programmed the GUI using XAML with WPF on Visual Studio. </p>
                     </div>
                     <a id="moreInfo" style="margin-top: 24%;">More Information</a>
                     <div id=soulignageMoreInfo style="margin-top: 27%;"></div>
@@ -122,7 +167,7 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                        SEE DEMO
+                        DEMO
                     </a>
                     <p id="downloadTxt"><i>or <a id="downloadHyperTxt" href="https://github.com/KarIdd/DefiMiniville_Group_D/releases/tag/patch1.01" target="_blank">download</a></i></p>
                 </div>
@@ -134,8 +179,9 @@
                 <div id="imgInfiltrationGame">
                     <a id="titlePlatformer"><b>DESCRIPTION</b><a>
                     <div id="textJustify" style="margin-top: 8.75%;">
-                        <p>Mini projet qui conclut la fin de la première séquence Unity à l'ENJMIN. Il s'agit d'un entraînement à l'utilisation des NavMesh sur Unity mais surtout une initiation à la programmation d'IA en State Machine. <br>
-                            J'ai fait l'entièreté du level design en posant chaque GameObject ainsi que le terrain.</p>
+                        <p>A project that sum up our first Unity C# course at the CNAM-ENJMIN. The goal was to learn using NavMesh Agents in Unity as well as programming State Machine AI.
+                            <br>But for me it was also a great opportunity to practice 3D level design and lightning.
+                        </p>
                     </div>
                     <a id="moreInfo" style="margin-top: 24%;">More Information</a>
                     <div id=soulignageMoreInfo style="margin-top: 27%;"></div>
@@ -164,9 +210,9 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                        SEE DEMO
+                        DEMO
                     </a>
-                    <p id="downloadTxt"><i>or <a id="downloadHyperTxt" href="https://github.com/KarIdd/DefiMiniville_Group_D/releases/tag/patch1.01" target="_blank">download</a></i></p>
+                    <p id="downloadTxt"><i>or <a id="downloadHyperTxt" href="https://drive.google.com/file/d/1X4v5bWs-hVmIJZcESXJ2BKGkSJUYRYWV/view" target="_blank">download</a></i></p>
                 </div>
             </div>
             

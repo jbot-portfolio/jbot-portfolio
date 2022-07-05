@@ -152,6 +152,7 @@ header {
     position: relative;
     font-size: 40px; 
     color: white;
+    margin-top: -5vh;
 }
 
 h1 {
@@ -296,6 +297,25 @@ h1 {
 
 }
 
+#animation
+{   
+    width: 1.6vw;
+    height: 1.6vw;
+    margin-left: 70%;
+    margin-top: 32.9%;
+    background-image: url(Projects/Design/animation.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+#textAnimation
+{
+    position: absolute;
+    margin-left: 73.75%;
+    margin-top: 33.5%;
+
+}
+
 #shaders
 {   
     width: 1.6vw;
@@ -414,7 +434,7 @@ h1 {
     width: 1.6vw;
     height: 1.6vw;
     margin-left: 70%;
-    margin-top: 42%;
+    margin-top: 41.9%;
     background-image: url(Projects/Design/asset.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -546,10 +566,11 @@ h1 {
     z-index: 6;
     display: none;
     width: 100%;
-    height: 376.25%;
+    height: 450.75%;
     position: absolute;
     background-color: #000000bb;
 }
+
 
 #demoPlatformer2D 
 {   
@@ -559,7 +580,29 @@ h1 {
     width: 55.1vw;
     height: 31vw;
     margin-left: 22.5%;
-    margin-top: 14.4%;
+    margin-top: 51.78%;
+}
+
+#filterSurvival3D
+{   
+    z-index: 6;
+    display: none;
+    width: 100%;
+    height: 450.75%;
+    position: absolute;
+    background-color: #000000bb;
+}
+
+
+#demoSurvival3D
+{   
+    z-index: 7;
+    position: absolute;
+    display: none;
+    width: 55.1vw;
+    height: 31vw;
+    margin-left: 22.5%;
+    margin-top: 14.43%;
 }
 
 #filterMinivilles
@@ -567,7 +610,7 @@ h1 {
     z-index: 6;
     display: none;
     width: 100%;
-    height: 376.25%;
+    height: 450.75%;
     position: absolute;
     background-color: #000000bb;
 }
@@ -579,7 +622,7 @@ h1 {
     width: 55.1vw;
     height: 31vw;
     margin-left: 22.5%;
-    margin-top: 51.6%;
+    margin-top: 89%;
 }
 
 #filterInfiltrationGame
@@ -587,7 +630,7 @@ h1 {
     z-index: 6;
     display: none;
     width: 100%;
-    height: 376.25%;
+    height: 450.75%;
     position: absolute;
     background-color: #000000bb;
 }
@@ -599,7 +642,7 @@ h1 {
     width: 55.1vw;
     height: 31vw;
     margin-left: 22.5%;
-    margin-top: 88.7%;
+    margin-top: 125.78%;
 }
 
 #downloadTxt 
@@ -608,7 +651,7 @@ h1 {
     font-family: "Roboto light";
     font-weight: 100;
     font-size: 0.6vw;
-    margin-left: 81%;
+    margin-left: 79%;
     margin-top: 0.2%;
     color: #ffffff;
 }
@@ -631,7 +674,7 @@ h1 {
     width: 55%;
     height: 93%;
     margin-left: 22.5%;
-    margin-top: -3%;
+    margin-top: -25vh;
     position: relative;
     font-size: 40px; 
     color: white;
@@ -665,6 +708,26 @@ h1 {
     height: 100%;
     margin-top: 0.5%;
     background-image: url(Projects/Design/Infiltration-Game.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#survival3D-container {
+    width: 55%;
+    height: 93%;
+    margin-left: 22.5%;
+    position: relative;
+    font-size: 40px; 
+    color: white;
+}
+
+#imgSurvival3D {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5%;
+    background-image: url(Projects/Design/Survival3D.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
