@@ -15,7 +15,7 @@ function initProject(_id, color)
     carouselItem.forEach(selectedItem => {selectedItem.style.border = `0.15em solid var(${color})`; });
     
     //Select first carousel by default
-    carouselItem[0].style.border = "0.15em solid var(--clr-accent)";
+    // carouselItem[0].style.border = "0.15em solid var(--clr-accent)";
     
     // Carousel Next / Previous buttons behavior
     slideButtons.forEach(button => 
@@ -132,6 +132,7 @@ const initProjectSelection = () =>
         //Select
         item.addEventListener("click", () => 
         {   
+            document.querySelectorAll('iframe').forEach(v => { v.src = v.src });
             projectSelectors.forEach(selectedItem => 
             {
                 selectedItem.style.border = "0.15em solid var(--clr-dark)";

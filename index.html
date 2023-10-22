@@ -17,7 +17,7 @@
 
 <body>
     <div class="lightbox">
-        <img src="Design/TNM/TNM-2.jpg" class="lightbox-content" id="lightbox-content">
+        <img src="" class="lightbox-content" id="lightbox-content">
     </div>
 
     <div class="navbar-wrap">
@@ -31,9 +31,9 @@
                 <div class="header-element">
                     <nav class="header-nav">
                         <ul>
-                            <li><a href="#top">A PROPOS</a></li>
-                            <li><a href="#nav-projets">PROJETS</a></li>
-                            <li><a href="#nav-contact">CONTACT</a></li>
+                            <li><a href="#about">A PROPOS</a></li>
+                            <li><a href="#projects">PROJETS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,11 +49,11 @@
     
     <div class="resolution-warning-wrapper">
         <div class="resolution-warning">
-            <p>Ce site n'est pas conçu pour mobile, passer en version pour ordinateur pour une expérience optimale.</p>
+            <p>Ce site n'est pas conçu pour mobile, veuillez passer sur ordinateur pour une expérience optimale.</p>
         </div>
     </div>
 
-    <div id="top">
+    <div id="about">
         <div class="container">
             <div style="height: 7.5rem;"></div>
     
@@ -100,7 +100,7 @@
 
     <div class="projects-pro-wave"><img src="Design/SVG/Wave-2.svg"></div>
 
-    <div style="background-color: #353535; scroll-margin-top: 3.5em" id="nav-projets">
+    <div style="background-color: #353535; scroll-margin-top: 3.5em" id="projects">
 
         <div style="height: 4rem; margin-top: -2.7em;"></div>
 
@@ -173,8 +173,8 @@
 
             <div class="project-selection-container">
                 <img src="Design/ALCHEMYST/ALCHEMYST-SMALL.png" id="s-project-1" class="project-selection-element">
-                <img src="Design/TNM/TNM-1.jpg" id="s-project-2" class="project-selection-element">
-                <img src="Design/TNM/TNM-1.jpg" id="s-project-3" class="project-selection-element">
+                <img src="Design/PLATFORMER/Action-platformer.png" id="s-project-2" class="project-selection-element">
+                <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR.png" id="s-project-3" class="project-selection-element">
             </div>
 
             <div class="project" id="project-1" style="margin-top: 3.5em;">
@@ -226,7 +226,7 @@
                     
                     <div class="project-buttons-container" style="margin-top: -1em;">
                         <div class="project-button-text">PAGE</div>
-                        <button class="project-button"><a>ITCH</a><i class="fa-brands fa-itch-io"></i></button>
+                        <button class="project-button"onclick="window.open('https://sneyus.itch.io/alchemyst', '_blank');"><a>ITCH</a><i class="fa-brands fa-itch-io"></i></button>
                     </div>
                 </div>
             </div>
@@ -288,22 +288,18 @@
             <div class="project" id="project-2" style="margin-top: 3.5em; display: none;">
                 <div class="project-main-content">
                     <iframe class="project-main-video" src="" title="VOD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <img src="Design/TNM/TNM-1.jpg" id="project-main-img" class="project-main-img">
+                    <img src="Design/PLATFORMER/Action-platformer.png" id="project-main-img" class="project-main-img">
                     
                     <div class="carousel-wrapper">
                         <a id="previous" class="carousel-left-arrow slider-arrow"><img src="Design/SVG/left-arrow.svg"></a>
                         <a id="next" class="carousel-right-arrow slider-arrow"><img src="Design/SVG/right-arrow.svg"></a>
-                        <div class="carousel-list">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-2.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-3.png" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
+                        <div class="carousel-list" style="grid-template-columns: repeat(6, 1fr);">
+                            <img src="Design/PLATFORMER/Action-platformer-thumbnail.png" id="https://www.youtube.com/embed/cFD2BjL8nyE" class="carousel-item">
+                            <img src="Design/PLATFORMER/Fight.gif" id="img" class="carousel-item">
+                            <img src="Design/PLATFORMER/Action-platformer-1.png" id="img" class="carousel-item">
+                            <img src="Design/PLATFORMER/Action-platformer-2.png" id="img" class="carousel-item">
+                            <img src="Design/PLATFORMER/Action-platformer-3.png" id="img" class="carousel-item">
+                            <img src="Design/PLATFORMER/Death.gif" id="img" class="carousel-item">
                         </div>
                     </div>
                 </div>
@@ -322,13 +318,13 @@
                     </div>
                     
                     <h5>ACTION PLATFORMER</h5>
-                    <p class="project-paragraph" style="margin-top: 0.25em;">Incarnez un jeune guerrier partant à l'aventure et luttant contre les forces des ténèbres. 
+                    <p class="project-paragraph" style="margin-top: 0.25em;">Incarnez un jeune villageois partant à l'aventure et luttant contre les forces des ténèbres. 
                         Sautez de plateforme en plateforme et venez à bout des monstres tout en redorant les bannières qui se hissent sur votre chemin !</p>
                     <p class="project-paragraph" style="margin-top: -0.3em;">Mon premier projet en 2D développé sur Unity en 2021.<br> 
                         Je voulais m'essayer au système de tilemaps ainsi que me pencher sur le système de particules et de lumières afin de créer un bel environnement nocturne.</p>
                         <div class="project-buttons-container" style="margin-top: 1.5em;">
                             <div class="project-button-text">PAGE</div>
-                            <button class="project-button"><a>ITCH</a><i class="fa-brands fa-itch-io"></i></button>
+                            <button class="project-button" onclick="window.open('https://sneyus.itch.io/2d-platformer-aventure', '_blank');"><a>ITCH</a><i class="fa-brands fa-itch-io"></i></button>
                         </div>
                 </div>
             </div>
@@ -336,22 +332,20 @@
             <div class="project" id="project-3" style="margin-top: 3.5em; display: none;" z>
                 <div class="project-main-content">
                     <iframe class="project-main-video" src="" title="VOD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <img src="Design/TNM/TNM-1.jpg" id="project-main-img" class="project-main-img">
+                    <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR.png" id="project-main-img" class="project-main-img">
                     
                     <div class="carousel-wrapper">
                         <a id="previous" class="carousel-left-arrow slider-arrow"><img src="Design/SVG/left-arrow.svg"></a>
                         <a id="next" class="carousel-right-arrow slider-arrow"><img src="Design/SVG/right-arrow.svg"></a>
-                        <div class="carousel-list">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-2.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-3.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
-                            <img src="Design/TNM/TNM-1.jpg" id="img" class="carousel-item">
+                        <div class="carousel-list" style="grid-template-columns: repeat(8, 1fr);">
+                            <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR-Thumbnails.png" id="https://www.youtube.com/embed/UEXnzsf8fVM" class="carousel-item">
+                            <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR-GAMEPLAY.gif" id="img" class="carousel-item">
+                            <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR-1.png" id="img" class="carousel-item">
+                            <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR-2.png" id="img" class="carousel-item">
+                            <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR-3.png" id="img" class="carousel-item">
+                            <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR-4.png" id="img" class="carousel-item">
+                            <img src="Design/ZOMBIES-SURVIVOR/MAP.png" id="img" class="carousel-item">
+                            <img src="Design/ZOMBIES-SURVIVOR/ZOMBIES-SURVIVOR-MAP.gif" id="img" class="carousel-item">
                         </div>
                     </div>
                 </div>
@@ -373,12 +367,12 @@
                     <p class="project-paragraph" style="margin-top: 0.25em;">Un endless beat'em all shooter vue top down en 3D voxel dans lequel vous devez survivre aux hordes de zombies.
                         <br>Éliminer en un maximum pour gagner diverses récompenses vous permettant ainsi d'acquérir de meilleures armes et des munitions afin de 
                         survivre le plus longtemps possible !</p>
-                    <p class="project-paragraph" style="margin-top: -0.3em;">Avec ce projet je voulais m'essayer au développement d'un jeu en voxel mais surtout au top down shooter 
-                        avec une IA. Ca m'a permis d'en apprendre d'avantage sur les animation layers et la physique mais ce fut également un vrai défi d'environnement art.</p>
+                    <p class="project-paragraph" style="margin-top: -0.3em;">Avec ce projet je voulais m'essayer au développement d'un jeu en voxel mais surtout au top down shooter et 
+                        avec de l'IA.<br>Ca m'a permis d'en apprendre d'avantage sur les animation layers et la physique mais ce fut également un vrai défi d'environnement art.</p>
                     
                         <div class="project-buttons-container" style="margin-top: -1em;">
                             <div class="project-button-text">PAGE</div>
-                            <button class="project-button"><a>ITCH</a><i class="fa-brands fa-itch-io"></i></button>
+                            <button class="project-button" onclick="window.open('https://sneyus.itch.io/zombies-survivor', '_blank');"><a>ITCH</a><i class="fa-brands fa-itch-io"></i></button>
                         </div>
                 </div>
             </div>
@@ -418,7 +412,7 @@
         </div>
     </div>
 
-    <footer class="footer" id="nav-contact">
+    <footer class="footer" id="contact">
         <p style="font-weight: 300; font-size: 1.1rem;" >Copyright © 2023</p>
         <p>Handcrafted by Joseph Bot </p>
     </footer>
