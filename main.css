@@ -172,6 +172,11 @@ body {
 	transform: scale(1.035);
 }
 
+.button-cv a {
+	color: var(--clr-white);
+	text-decoration: none;
+}
+
 .button-cv:hover a {
 	transition: linear 0.1s;
 	color: var(--clr-accent);
