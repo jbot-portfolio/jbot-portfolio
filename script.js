@@ -92,6 +92,7 @@ function initProject(_id, color)
 }
 
 window.addEventListener("load", initProject("project-pro-1", "--clr-dark-grey"));
+window.addEventListener("load", initProject("project-pro-2", "--clr-dark-grey"));
 window.addEventListener("load", initProject("project-1", "--clr-dark"));
 window.addEventListener("load", initProject("project-2", "--clr-dark"));
 window.addEventListener("load", initProject("project-3", "--clr-dark"));
@@ -158,3 +159,65 @@ const initProjectSelection = () =>
 }
 
 window.addEventListener("load", initProjectSelection);
+
+const initProProjectSelection = () => 
+{
+    const projectSelectors = document.querySelectorAll(".project-pro-selection-element");
+    var projects = document.querySelector(".projects-pro").querySelectorAll(".project");
+
+    //Select the first by default
+    projectSelectors[0].style.border = "0.15em solid var(--clr-accent)";
+    projectSelectors[0].style.transform = "scale(1.05)";
+    var projectSelected = projectSelectors[0].id.slice(2);
+
+    projectSelectors.forEach(item => 
+    {
+        //Hover
+        item.addEventListener("mouseover", () => 
+        {
+            if(item.id.slice(2) != projectSelected)
+            {
+                item.style.border = "0.15em solid var(--clr-white)";
+                item.style.transform = "scale(1.01)";
+            }
+        });
+
+        //Unhover
+        item.addEventListener("mouseout", () => 
+        {
+            if(item.id.slice(2) != projectSelected)
+            {
+                item.style.border = "0.15em solid var(--clr-dark-grey)";
+                item.style.transform = "scale(1)";
+            }
+        });
+
+        //Select
+        item.addEventListener("click", () => 
+        {   
+            document.querySelectorAll('iframe').forEach(v => { v.src = v.src });
+            projectSelectors.forEach(selectedItem => 
+            {
+                selectedItem.style.border = "0.15em solid var(--clr-dark-grey)";
+                selectedItem.style.transform = "scale(1)";
+                creditsProject1.style.display = "none";
+            });
+            
+            item.style.border = "0.15em solid var(--clr-accent)";
+            item.style.transform = "scale(1.05)";
+            if(item.id.slice(2) == "project-pro-1") creditsProject1.style.display = "block";
+
+            projectSelected = item.id.slice(2);
+            
+            projects.forEach(prj => 
+            { 
+                if(prj.id != projectSelected)
+                    prj.style.display = "none";
+                else
+                    prj.style.display = "grid";
+            });
+        });
+    });
+}
+
+window.addEventListener("load", initProProjectSelection);

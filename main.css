@@ -696,6 +696,24 @@ body {
 	transition: linear 0.1s;
 }
 
+.project-pro-selection-container {
+	display: flex;
+	width: fit-content;
+	margin: auto;
+	gap: 0.65em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-pro-selection-element {
+	width: 17em;
+	box-shadow: 0.05em 0em 0.05em #3535358e;
+	border: 0.15em solid var(--clr-dark-grey);
+	cursor: pointer;
+	border-radius: 8px;
+	transition: linear 0.1s;
+}
+
 /* CONTACT */
 
 .contact-wave {

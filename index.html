@@ -111,21 +111,35 @@
 					Programmant depuis 2018, je ne manque pas une occasion d’élargir mes compétences
 					en relevant tous les challenges qui s’offrent à moi. Appréciant
 					la programmation et notamment l'aspect visuel de la conception de jeux vidéo, je 
-					m’intéresse particulièrement à ce qui touche au rendu : la création de shaders, VFX et 
-					post-traitement, pour à l’avenir me tourner vers le métier de Technical Artist.
+					m’intéresse particulièrement à ce qui touche au rendu ou au rendering (shaders, post-processing) 
+					pour à l’avenir me tourner vers le métier de Technical Artist ou Graphics Programmer.
 				</p>
 			</div>
 		</div>
 
 		<div class="projects-pro-wave"><img src="Design/SVG/Wave-2.svg" /></div>
 
-		<div style="background-color: #353535; scroll-margin-top: 3.5em" id="projects">
+		<div class="projects-pro" style="background-color: #353535; scroll-margin-top: 3.5em" id="projects">
 			<div style="height: 4rem; margin-top: -2.7em"></div>
 
 			<div class="container projects-pro">
 				<h1 class="projects-title">PROJETS PROFESSIONNELS</h1>
 
-				<div class="project" id="project-pro-1" style="margin-top: 2.5em">
+				<div class="project-pro-selection-container">
+					<img
+					src="Design/TNM/TNM-SMALL.png".
+					id="s-project-pro-1"
+					class="project-pro-selection-element"
+					/>
+					<img
+					src="Design/SIW/SIW.png"
+					id="s-project-pro-2"
+						class="project-pro-selection-element"
+					/>
+				</div>
+
+				
+				<div class="project" id="project-pro-1" style="margin-top: 3.5em">
 					<div class="project-main-content">
 						<iframe
 							class="project-main-video"
@@ -201,7 +215,7 @@
 							Premier opus du studio Belette Team, auquel j’ai contribué en étroite
 							collaboration avec Jordan Lafont (Lead Programmeur) de par la programmation
 							gameplay, l’intégration visuelle ainsi que la création de différents shaders
-							et VFX, ce qui a conduit à l’aboutissement de la vertical slice ci-contre.
+							et VFX, ce qui a conduit à l’aboutissement de la vertical slice ci-contre en 2023.
 						</p>
 
 						<div class="project-buttons-container" style="margin-top: 1em">
@@ -209,6 +223,85 @@
 							<button
 								class="project-button steam"
 								onclick="window.open('https://store.steampowered.com/app/2423140/Theyre_Not_Monsters/', '_blank');"
+							>
+								<a>STEAM</a><i class="fa-brands fa-steam"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="project" id="project-pro-2" style="margin-top: 3.5em; display: none">
+					<div class="project-main-content">
+						<iframe
+							class="project-main-video"
+							src=""
+							title="VOD"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+						<img
+							src="Design/SIW/SIW.png"
+							id="project-main-img"
+							class="project-main-img"
+						/>
+	
+						<div class="carousel-wrapper">
+							<a id="previous" class="carousel-left-arrow slider-arrow"
+								><img src="Design/SVG/left-arrow.svg"
+							/></a>
+							<a id="next" class="carousel-right-arrow slider-arrow"
+								><img src="Design/SVG/right-arrow.svg"
+							/></a>
+							<div class="carousel-list" style="grid-template-columns: repeat(13, 1fr)">
+								<img
+									src="Design/SIW/SIW-THUMBNAIL.png"
+									id="https://www.youtube.com/embed/0bTu4-ZJiSM"
+									class="carousel-item"
+								/>
+								<img src="Design/SIW/SIW-1.jpg" id="img" class="carousel-item" />
+								<img src="Design/SIW/SIW-2.jpg" id="img" class="carousel-item" />
+								<img src="Design/SIW/SIW-3.jpg" id="img" class="carousel-item" />
+								<img src="Design/SIW/SIW-4.jpg" id="img" class="carousel-item" />
+								<img src="Design/SIW/SIW-5.jpg" id="img" class="carousel-item" />
+								<img src="Design/SIW/SIW-6.jpg" id="img" class="carousel-item" />
+								<img src="Design/SIW/SIW-7.jpg" id="img" class="carousel-item" />
+							</div>
+						</div>
+					</div>
+					<div class="projects-main-text" style="text-align: left; padding-left: 1.5em">
+						<div class="project-infos-layout">
+							<div class="project-tags-container">
+								<div class="project-tag">2D</div>
+								<div class="project-tag">Unity</div>
+								<div class="project-tag">C#</div>
+							</div>
+	
+							<div class="project-infos-container">
+								<div class="project-info">
+									1 AN<img src="Design/TIME.png" class="project-info-icon" />
+								</div>
+								<div class="project-info">
+									8<img src="Design/person.png" class="project-info-icon" />
+								</div>
+							</div>
+						</div>
+	
+						<h5>SMASH IT WILD</h5>
+						<h6>GOBLINZ STUDIO</h6>
+						<p class="project-paragraph">
+							Smash It Wild est un jeu tactique au tour par tour mêlant volley-ball et dodgeball, dans un univers fantastique. Améliorez vos champions et affrontez des adversaires dans une compétition roguelike intense ! 
+						</p>
+						<p class="project-paragraph" style="margin-top: -0.3em">
+							Projet sur lequel je travaille depuis plus d'un an, en étroite collaboration avec Ernestine Studio pour les visuels du jeu<br>
+							Du prototypage jusqu'à la phase de production en passant par la pré-production.
+						</p>
+	
+						<div class="project-buttons-container" style="margin-top: 1em">
+							<div class="project-button-text">PAGE</div>
+							<button
+								class="project-button steam"
+								onclick="window.open('https://store.steampowered.com/app/2432240/Smash_It_Wild/', '_blank');"
 							>
 								<a>STEAM</a><i class="fa-brands fa-steam"></i>
 							</button>
@@ -676,7 +769,7 @@
 		</div>
 
 		<footer class="footer" id="contact">
-			<p style="font-weight: 300; font-size: 1.1rem">Copyright © 2023</p>
+			<p style="font-weight: 300; font-size: 1.1rem">Copyright © 2025</p>
 			<p>Handcrafted by Joseph Bot</p>
 		</footer>
 	</body>
